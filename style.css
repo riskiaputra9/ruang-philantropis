@@ -1,51 +1,59 @@
-/* Global */
+/* Fonts & Base */
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Merriweather', serif;
   background: #fff;
   color: #333;
   margin: 0;
   line-height: 1.8;
 }
 
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 2rem;
 }
 
-/* Header */
-header {
-  background: #f5f5f5;
+/* Hero Section */
+.hero {
+  background: url('https://picsum.photos/1600/600?blur=3') center/cover no-repeat;
+  color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  color: #222;
+.hero .overlay {
+  background: rgba(0, 70, 40, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
-  color: #666;
-  margin-top: 0.5rem;
   font-style: italic;
-}
-
-nav {
-  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
-  color: #444;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 600;
 }
 
 nav a:hover {
-  color: #0073e6;
+  color: #a8ffbf;
 }
 
 /* Sections */
@@ -54,42 +62,51 @@ nav a:hover {
 }
 
 .alt-bg {
-  background: #fafafa;
+  background: #f2fbf6;
 }
 
 h2 {
   margin-bottom: 1rem;
-  color: #111;
-  border-bottom: 2px solid #eee;
-  display: inline-block;
-  padding-bottom: 0.3rem;
+  color: #064e3b;
+  border-left: 4px solid #059669;
+  padding-left: 10px;
 }
 
-/* Blog */
+/* Blog Cards */
 .posts {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.posts article h3 {
-  margin: 0;
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-top: 4px solid #10b981;
 }
 
-.posts article a {
-  color: #0073e6;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 a {
+  color: #047857;
   text-decoration: none;
 }
 
-.posts article a:hover {
+.card h3 a:hover {
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background: #f5f5f5;
+  background: #064e3b;
+  color: #e5fdf2;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #666;
 }
