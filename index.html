@@ -3,88 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ruang Philantropis - Tempat berbagi gagasan dan refleksi sosial">
   <title>Ruang Philantropis</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="hero">
-    <div class="overlay">
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container nav-container">
+      <h1 class="logo">Ruang Philantropis</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
       <h1>Ruang Philantropis</h1>
-      <p class="tagline">Merawat Nalar, Merajut Asa</p>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#blog">Blog</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <p>Tempat berbagi gagasan dan refleksi sosial</p>
+      <a href="#blog" class="btn-primary">Baca Artikel</a>
     </div>
   </header>
 
-  <!-- Home -->
-  <section id="home" class="section">
-    <div class="container">
-      <h2>Selamat Datang</h2>
-      <p>Ruang Philantropis adalah ruang refleksi, catatan, dan tulisan pribadi dari pengalaman saya sebagai peneliti dan penulis. Dibangun dengan semangat berbagi gagasan dan pengetahuan.</p>
-    </div>
+  <!-- About Section -->
+  <section id="about" class="about container">
+    <h2>Tentang Ruang Philantropis</h2>
+    <p>Ruang Philantropis adalah platform untuk berbagi gagasan, catatan penelitian, dan refleksi sosial. Situs ini bertujuan untuk memfasilitasi pembelajaran dan diskusi yang bermakna.</p>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section alt-bg">
-    <div class="container">
-      <h2>Tentang Saya</h2>
-      <p>Saya adalah seorang peneliti dan penulis yang percaya bahwa tulisan adalah cara terbaik untuk merawat nalar dan merajut asa. Di ruang ini saya berbagi gagasan, refleksi, dan pengalaman yang saya temui dalam perjalanan intelektual dan kehidupan sehari-hari.</p>
-    </div>
-  </section>
-
-  <!-- Blog -->
-  <section id="blog" class="section">
-    <div class="container">
-      <h2>Blog</h2>
-      <div class="posts">
-        <article class="card">
-          <h3><a href="#">Refleksi tentang Menulis</a></h3>
-          <p>Menulis bukan hanya tentang menuangkan kata, tetapi juga proses menemukan diri sendiri...</p>
-        </article>
-        <article class="card">
-          <h3><a href="#">Catatan Penelitian Sosial</a></h3>
-          <p>Melihat fenomena sosial dengan lensa penelitian memberi perspektif baru dalam memahami masyarakat...</p>
-        </article>
-        <article class="card">
-          <h3><a href="#">Menghubungkan Ilmu dan Kehidupan</a></h3>
-          <p>Bagaimana ilmu pengetahuan bisa hadir lebih dekat dengan kehidupan sehari-hari kita...</p>
-        </article>
+  <!-- Blog Section -->
+  <section id="blog" class="blog container">
+    <h2>Artikel Terbaru</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="artikel1.jpg" alt="Artikel 1">
+        <h3>Refleksi tentang Menulis</h3>
+        <p>Menjelajahi pentingnya menulis sebagai sarana ekspresi dan pengembangan diri.</p>
+        <a href="#">Baca Selengkapnya</a>
+      </div>
+      <div class="card">
+        <img src="artikel2.jpg" alt="Artikel 2">
+        <h3>Catatan Penelitian Sosial</h3>
+        <p>Insight dan temuan penelitian sosial yang relevan dengan isu kontemporer.</p>
+        <a href="#">Baca Selengkapnya</a>
+      </div>
+      <div class="card">
+        <img src="artikel3.jpg" alt="Artikel 3">
+        <h3>Inspirasi dan Refleksi</h3>
+        <p>Berbagi pemikiran tentang kehidupan, masyarakat, dan kontribusi sosial.</p>
+        <a href="#">Baca Selengkapnya</a>
       </div>
     </div>
   </section>
 
-  <!-- Research -->
-  <section id="research" class="section alt-bg">
-    <div class="container">
-      <h2>Research & Publikasi</h2>
-      <ul>
-        <li><b>Artikel:</b> Peran Filantropi dalam Masyarakat Modern</li>
-        <li><b>Paper:</b> Dampak Sosial dari Aktivitas Penelitian</li>
-      </ul>
-    </div>
+  <!-- Research Section -->
+  <section id="research" class="research container">
+    <h2>Research</h2>
+    <p>Berbagai catatan penelitian dan publikasi akademik yang dapat diakses dan dipelajari oleh pengunjung.</p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Kontak</h2>
-      <p>Email: <a href="mailto:ruangphilantropis@gmail.com">ruangphilantropis@gmail.com</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/ruangphilantropis</a></p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact container">
+    <h2>Kontak</h2>
+    <p>Hubungi kami untuk kolaborasi atau pertanyaan lebih lanjut:</p>
+    <form>
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan" required></textarea>
+      <button type="submit" class="btn-primary">Kirim</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Ruang Philantropis | Semua Hak Dilindungi.</p>
+    <p>&copy; 2025 Ruang Philantropis | Designed by Putra</p>
+    <div class="social-icons">
+      <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
     </div>
   </footer>
+
 </body>
 </html>
