@@ -55,6 +55,7 @@ nav {
   align-items: center;
   text-align: center;
   color: white;
+  padding: 0 20px;
 }
 .hero h1 {
   font-size: 3rem;
@@ -71,6 +72,8 @@ nav {
   border-radius: 12px;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
 }
 .btn-primary:hover {
   background-color: #98FB98;
@@ -126,6 +129,17 @@ section {
   font-weight: bold;
 }
 
+/* Blog - Placeholder kosong */
+.card.kosong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  padding: 40px 20px;
+  text-align: center;
+}
+
 /* Contact Form */
 form {
   display: flex;
@@ -159,6 +173,12 @@ footer .social-icons img {
 
 /* Responsive */
 @media(max-width:768px){
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
   .nav-links {
     flex-direction: column;
     gap: 10px;
