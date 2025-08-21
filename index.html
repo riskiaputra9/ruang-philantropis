@@ -3,82 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ruang Philantropis - Tempat berbagi gagasan dan refleksi sosial">
   <title>Ruang Philantropis</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+
+    header .logo {
+      font-weight: 700;
+      color: #134e2a;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo span {
+      margin-left: 0.5rem;
+    }
+
+    nav a {
+      margin-left: 1.2rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #134e2a;
+    }
+
+    nav a.active {
+      color: #134e2a;
+      border-bottom: 2px solid #134e2a;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: .5rem;
+    }
+
+    .hero p {
+      color: #555;
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .8rem 1.2rem;
+      background: #134e2a;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0f3f23;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      border-left: 4px solid #134e2a;
+      padding-left: 0.5rem;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .article {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 1rem;
+      background: #fafafa;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .article img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: .8rem;
+    }
+
+    .article h3 {
+      margin: .5rem 0;
+    }
+
+    .article small {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #eee;
+      margin-top: 2rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <div class="container nav-container">
-      <h1 class="logo">Ruang Philantropis</h1>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <h1>Ruang Philantropis</h1>
-      <p>Tempat berbagi gagasan dan refleksi sosial</p>
-      <a href="#blog" class="btn-primary">Baca Artikel</a>
-    </div>
+  <header>
+    <div class="logo">🌱<span>Ruang Philantropis</span></div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="about container">
-    <h2>Tentang Ruang Philantropis</h2>
-    <p>Ruang Philantropis adalah platform untuk berbagi gagasan, catatan penelitian, dan refleksi sosial. Situs ini bertujuan untuk memfasilitasi pembelajaran dan diskusi yang bermakna.</p>
+  <section class="hero" id="home">
+    <h1>Ruang Refleksi Sosial</h1>
+    <p>Menyajikan pemikiran dan analisis tentang berbagai isu sosial dan filantropi</p>
+    <a href="#blog" class="btn">📖 Baca Artikel Terbaru</a>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blog" class="blog container">
+  <section class="section" id="blog">
     <h2>Artikel Terbaru</h2>
-    <div class="cards">
-  <div class="card">
-    <img src="kemerdekaan.jpg" alt="Kemerdekaan">
-    <h3>Kemerdekaan Tanpa Etika, Apakah Benar-Benar Merdeka?</h3>
-    <p>Sebuah refleksi tentang bagaimana etika menjadi penjaga kebebasan sejati dalam kehidupan bermasyarakat.</p>
-    <a href="kemerdekaan.html">Baca Selengkapnya</a>
-  </div>
-</div>
-  </section>
-
-  <!-- Research Section -->
-  <section id="research" class="research container">
-    <h2>Research</h2>
-    <p>Berbagai catatan penelitian dan publikasi akademik yang dapat diakses dan dipelajari oleh pengunjung.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact container">
-    <h2>Kontak</h2>
-    <p>Hubungi kami untuk kolaborasi atau pertanyaan lebih lanjut:</p>
-    <form>
-      <input type="text" name="nama" placeholder="Nama" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="pesan" placeholder="Pesan" required></textarea>
-      <button type="submit" class="btn-primary">Kirim</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Ruang Philantropis | Designed by Putra</p>
-    <div class="social-icons">
-      <a href="#" aria-label="Twitter"><img src="icon-twitter.png" alt="Twitter"></a>
-      <a href="#" aria-label="Instagram"><img src="icon-instagram.png" alt="Instagram"></a>
+    <div class="articles">
+      <div class="article">
+        <img src="https://via.placeholder.com/400x200" alt="Artikel 1">
+        <h3>Filantropi dalam Mengatasi Kemiskinan</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <small>✍️ Riski A. Putra — 27 April 2024</small>
+      </div>
+      <div class="article">
+        <img src="https://via.placeholder.com/400x200" alt="Artikel 2">
+        <h3>Peran Pendidikan dalam Pembangunan Masyarakat</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <small>✍️ Riski A. Putra — 27 April 2024</small>
+      </div>
     </div>
-  </footer>
+  </section>
 
+  <section class="section">
+    <h2>Artikel Populer</h2>
+    <a href="#blog" class="btn">Lihat Semua</a>
+  </section>
+
+  <section class="section">
+    <h2>Ikut Diskusi</h2>
+    <p>Bergabunglah dalam diskusi dan berbagi pandangan tentang isu sosial</p>
+    <a href="#contact" class="btn">💬 Ikut Diskusi</a>
+  </section>
+
+  <footer>
+    <p>© 2024 Ruang Philantropis — Dibangun dengan ♥ di GitHub Pages</p>
+  </footer>
 </body>
 </html>
-
